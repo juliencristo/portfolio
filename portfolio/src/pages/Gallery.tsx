@@ -1,22 +1,27 @@
-import {useSuspenseQuery} from '@tanstack/react-query'
-import {getFruits} from '@/api/fruits'
-import {Fruit} from '@/components/Fruit'
-import {Head} from '@/components/Head'
+import { Head } from '@/components/Head'
+import { Layout } from '@/components/Layout'
+import { Me } from '@/components/Me'
+import { Projects } from '@/components/Projects'
+import { Skills } from '@/components/Skills'
 
 export function Gallery() {
-	const {data} = useSuspenseQuery({
-		queryFn: getFruits,
-		queryKey: ['fruits']
-	})
-
 	return (
 		<>
-			<Head title='Vitamin' />
-			<div className='m-2 grid min-h-screen grid-cols-[minmax(0,384px)] place-content-center gap-2 md:m-0 md:grid-cols-[repeat(2,minmax(0,384px))] xl:grid-cols-[repeat(3,384px)]'>
-				{data.map((fruit, index) => (
-					<Fruit fruit={fruit} index={index} key={`FruitCard-${fruit.name}`} />
-				))}
-			</div>
+			<Head title='Cristovao - Portfolio' />
+			<Layout>
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 items-center">
+					<div className="flex justify-center w-full">
+						<Me />
+					</div>
+					<div className="text-center md:text-left space-y-4 mt-4 md:mt-0">
+						<h1 className="text-3xl md:text-4xl font-bold">Bonjour 👋</h1>
+						<h2 className="text-xl md:text-2xl font-semibold">Je suis Julien Cristovao</h2>
+						<p className="text-base md:text-lg">Développeur FullStack</p>
+					</div>
+				</div>
+				<Skills />
+				<Projects />
+			</Layout>
 		</>
 	)
 }
