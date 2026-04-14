@@ -20,7 +20,7 @@ export function Head({ title }: Properties): React.ReactElement {
 		<header className="shadow-md bg-[hsl(var(--background))] border border-b-[hsl(var(--border))]">
 			<nav className="container mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
 				<div className="flex items-center justify-between">
-					<Link to="/" className="text-xl font-bold text-gray-800 dark:text-white">
+					<Link to="/" className="text-xl font-bold text-white dark:text-white">
 						<p>Julien Cristovao</p>
 					</Link>
 					<div className="space-x-2">

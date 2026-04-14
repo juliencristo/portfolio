@@ -19,7 +19,7 @@ export const projectsAtWorkData : WorksProps[] = [
         title: "Cours",
         description: "Plateforme de cours en ligne.",
         technologies: [<WordpressIcon />, <PhpIcon />, <ReactIcon />, <DockerIcon />],
-        work: "L'Ecole Française",
+        work: "Création et optimisation d'un plugin Wordpress maison sur une base de Learndash.",
         link: "https://cours.lecolefrancaise.fr/",
         image: "./cours.png",
     },

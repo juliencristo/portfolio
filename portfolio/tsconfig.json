@@ -6,6 +6,11 @@
 	],
 	"compilerOptions": {
     "baseUrl": ".",
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
     "paths": {
     "@/*": ["./src/*"]
     },

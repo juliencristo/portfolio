@@ -21,7 +21,7 @@ export function Projects() {
                         <HoverCardContent className="w-80 bg-[hsl(var(--muted))] text-[hsl(var(--primary))] p-4 border-[hsl(var(--border))]">
                             {project.work && <p className="text-sm italic mb-2">{project.work}</p>}
                         </HoverCardContent>
-                        <HoverCardTrigger>
+                        <HoverCardTrigger asChild>
                             <Link to={project.link} key={index}>
                                 <Card
                                     key={index}
@@ -30,7 +30,7 @@ export function Projects() {
                                     <CardHeader>
                                         <CardTitle className="text-xl">{project.title}</CardTitle>
                                     </CardHeader>
-                                    <CardContent className="flex-grow">
+                                    <CardContent className="grow">
                                         <div className="flex flex-wrap gap-1">
                                             <img src={project.image} alt={project.title} className="w-full min-h-30 max-h-30 rounded" />
                                             <CardDescription className="w-full min-h-15 max-h-15 pt-2">{project.description}</CardDescription>
@@ -49,7 +49,7 @@ export function Projects() {
                                 </Card>
                             </Link>
                         </HoverCardTrigger>
-                        
+
                     </HoverCard>
                 ))}
             </div>
