@@ -1,0 +1,22 @@
+{
+	"files": [],
+	"references": [
+		{ "path": "./tsconfig.app.json" },
+		{ "path": "./tsconfig.node.json" }
+	],
+	"compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "moduleResolution": "bundler",
+    "strict": true,
+    "esModuleInterop": true,
+    "paths": {
+    "@/*": ["./src/*"]
+    },
+    "plugins": [
+      { "name": "typescript-plugin-css-modules" }
+    ],
+    "forceConsistentCasingInFileNames": true
+	}
+}
