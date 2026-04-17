@@ -2,7 +2,7 @@ import { Link } from "react-router";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { Badge } from "./ui/badge";
 import { projectsAtWorkData } from "@/data/projectsAtWorkData";
-import { projectsAtHomeData } from "@/data/projectsAtHome";
+import { projectsAtHomeData } from "@/data/projectsAtHomeData";
 import {
     HoverCard,
     HoverCardContent,
@@ -27,7 +27,7 @@ export function Projects() {
                                     key={index}
                                     className="flex flex-col h-full bg-[hsl(var(--card))] border-[hsl(var(--border))] hover:bg-[hsl(var(--muted))] transition-colors duration-300"
                                 >
-                                    <CardHeader>
+                                    <CardHeader className="min-h-15">
                                         <CardTitle className="text-xl">{project.title}</CardTitle>
                                     </CardHeader>
                                     <CardContent className="grow">
@@ -61,7 +61,7 @@ export function Projects() {
                             key={index}
                             className="flex flex-col h-full bg-[hsl(var(--card))] border-[hsl(var(--border))] hover:bg-[hsl(var(--muted))] transition-colors duration-300"
                         >
-                            <CardHeader>
+                            <CardHeader className="min-h-15">
                                 <CardTitle className="text-xl">{project.title}</CardTitle>
                             </CardHeader>
                             <CardContent className="flex-grow">

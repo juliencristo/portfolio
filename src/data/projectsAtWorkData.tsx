@@ -1,4 +1,3 @@
-
 import { DockerIcon } from "@/components/icons/DockerIcon";
 import { PhpIcon } from "@/components/icons/PhpIcon";
 import { ReactIcon } from "@/components/icons/ReactIcon";
@@ -8,7 +7,7 @@ import type { WorksProps } from "@/types/IWorks";
 
 export const projectsAtWorkData : WorksProps[] = [
     {
-        title: "Ma certification",
+        title: "Certification Platform",
         description: "Site permettant de passer une certification en ligne.",
         technologies: [<PhpIcon />, <SymfonyIcon />, "Twig", <DockerIcon />],
         work: "Refonte totale du passage d'une certification de la gestion des notes, rattrapages des examens pondération",
@@ -16,7 +15,7 @@ export const projectsAtWorkData : WorksProps[] = [
         image: "./ma-certif.png",
     },
     {
-        title: "Cours",
+        title: "E-Learning Platform",
         description: "Plateforme de cours en ligne.",
         technologies: [<WordpressIcon />, <PhpIcon />, <ReactIcon />, <DockerIcon />],
         work: "Création et optimisation d'un plugin Wordpress maison sur une base de Learndash.",
@@ -24,16 +23,16 @@ export const projectsAtWorkData : WorksProps[] = [
         image: "./cours.png",
     },
     {
-        title: "Portail",
-        description: "Plateforme interne de gestion de contenu.",
+        title: "Internal Management System",
+        description: "Outils internes pour les équipes opérationnelles.",
         technologies: [<PhpIcon />, <SymfonyIcon />, <ReactIcon />, <DockerIcon />],
         work: "L'Ecole Française",
         link: "https://portail.lecolefrancaise.fr/",
         image: "./Portail.png",
     },
     {
-        title: "Maom",
-        description: "Site vitrine pour une cliente décoratrice d'intérieur",
+        title: "Interior Design Marketing Website (Maom)",
+        description: "Site vitrine pour une décoratrice d'intérieur",
         technologies: [<PhpIcon />, <SymfonyIcon />, <ReactIcon />],
         work: "Conception et développement du site.",
         link: "https://www.instagram.com/atelier.maom/",
